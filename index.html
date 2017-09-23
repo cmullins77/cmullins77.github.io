@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<style>
+   @font-face {
+       font-family: Cat; 
+       src: url('../assets/fonts/Barking Cat DEMO.otf');
+    } 
+    ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 20px;
+        overflow: hidden;
+        background-color: #88eebb;
+        font-family: "cat";
+        font-size: 30px;
+         margin-top: 0px;
+        margin-bottom: 0px;
+        line-height: 0px;
+    }
+    h1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        line-height: 80px;
+    }
+    li {
+        display: inline;
+    }
+    li a{
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        text-decoration: none;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        line-height: 15px;
+    }
+    p a{
+        color: #ff4d00;   
+    }
+    a {
+       color: #ff4d00;
+    }
+    li a:hover {
+        color: #ff4d00;
+        text-align: center;
+    }
+    .name{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        font-family: "trebuchet ms"; 
+        font-size: 36px;
+        color: #ff4d00;
+    }
+    .active {
+        color: #ff4d00;
+    }
+    .main-block {
+        width: 100%;
+    }
+    .main-image {
+        width: 100%;
+    }
+    .right-block {
+        width:100%;
+    }
+    .info{
+        width: 100%;
+        padding: 0;
+        text-align: justify;
+        font-family: "trebuchet ms"; 
+        font-size: 16px;
+        color: #44aa88;
+    }
+    #nav-bar{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        line-height: 40px;
+    }
+    #projectTitle{
+        font-family: "trebuchet ms";
+        text-align: center;
+        margin-top: 5vh;
+        margin-bottom: 2vh;
+        line-height: 40px;
+        font-size: 36px;
+        color: #44aa88;
+    }
+     div.gallery {
+    margin: 5px;
+    display: inline-block;
+    width: 340px;
+     vertical-align: top;
+}
+
+div.gallery:hover {
+    background-color:#ffdd88;
+}
+
+div.gallery img {
+    width: 320px;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: justify;
+    font-family: "trebuchet ms"; 
+    font-size: 16px;
+    color: #44aa88;
+}
+caption_text{
+    text-align: justify;
+    font-family: "trebuchet ms"; 
+    font-size: 16px;
+    color: #44aa88;
+}
+div a{
+       display: inline-block;
+        padding: 8px;
+        color: white;
+        text-decoration: none;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        line-height: 15px;
+}
+alink a{
+color: #ff4d00; 
+padding: 0px;
+}
+b{
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        font-family: "trebuchet ms"; 
+        font-size: 22px;
+        color: #ff4d00; 
+    }
+    b:hover{
+        color: #000000;
+    }
+    
+    .nounderline{
+        text-decoration:none
+    }
+   
+</style>
+</head>
+<script type="text/javascript" src="js/app.js"></script>
+<body>
+    <header class="name">
+       <h1>cassie mullins</h1>
+    </header>
+    <table width="100%">
+        <tr>
+            <td width="25%"></td>
+            <td width="50%">
+                <center>
+                    <ul>
+                        <li><a class="active" href="https://personal-website-cmullins7.c9users.io/index.html">Home</a></li>
+                        <li><a href="https://personal-website-cmullins7.c9users.io/bio.html">Bio</a></li>
+                        <li><a href="https://personal-website-cmullins7.c9users.io/resume.html">Resume</a></li>
+                        <li><a href="https://personal-website-cmullins7.c9users.io/portfolio.html">Portfolio</a></li>
+                        <li><a href="https://personal-website-cmullins7.c9users.io/contact.html">Contact</a></li>
+                    </ul>
+                </center>
+            </td>
+            <td width="25%"></td>
+        </tr>
+    </table>
+    <center>
+         <header>
+             <h2 id="projectTitle">Featured Project: Chain Reaction</h2>
+         </header>
+         <table width="50%">
+            <tr>
+                <td width="100%">
+                    <center style="margin-top: 3vw; margin-bottom: 3vw">
+                        <iframe width="560" height="316" padding-top: 56.25% src="https://www.youtube.com/embed/Zlrz7D3X20Q" frameborder="0" allowfullscreen></iframe>
+                    </center>
+                </td>
+            </tr>
+        </table>
+    <table>
+        <tr width="100%">
+                <td width="5%"></td>
+                <td width="90%">
+                    <center>
+                        <div class="gallery">
+                          <a target="assets/images/circle.png" href="assets/images/Chain_Reaction2.png">
+                            <img src="assets/images/Chain_Reaction2.png" alt="Mountains" width="600" height="400">
+                          </a>
+                          <div class="desc">Chain Reaction is a steam-punk 
+                          puzzle game make in Processing where two players
+                          must work together to fix a variety of broken machines.</div>
+                        </div>
+                        <div class="gallery">
+                          <a target="assets/images/circle.png" href="assets/images/Chain_Reaction1.PNG">
+                            <img src="assets/images/Chain_Reaction1.PNG" alt="Mountains" width="600" height="400">
+                          </a>
+                          <div class="desc">On top of the main puzzle mode there
+                          is also a freeplay mode where players can create their 
+                          own fun contraption.</div>
+                        </div>
+                        <div class="gallery">
+                          <a target="assets/images/circle.png" href="assets/images/Typewriter.png">
+                            <img src="assets/images/Typewriter.png" alt="Mountains" width="600" height="400">
+                          </a>
+                          <div class="desc">The steampunk vector art style we went with 
+                          was a lot of fun to work with, and produced some nice results.</div>
+                        </div>
+                    </center>
+                </td>
+                <td width="5%"></td>
+            </tr>
+        </table>
+</body>
+</html>
