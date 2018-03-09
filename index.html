@@ -1,222 +1,243 @@
 <!DOCTYPE html>
 <html>
+<title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-   @font-face {
-       font-family: Cat; 
-       src: url('../assets/fonts/Barking Cat DEMO.otf');
-    } 
-    ul {
-        list-style-type: none;
-        margin: 0px;
-        padding: 20px;
-        overflow: hidden;
-        background-color: #88eebb;
-        font-family: "cat";
-        font-size: 30px;
-         margin-top: 0px;
-        margin-bottom: 0px;
-        line-height: 0px;
-    }
-    h1{
-        margin-top: 10px;
-        margin-bottom: 10px;
-        line-height: 80px;
-    }
-    li {
-        display: inline;
-    }
-    li a{
-        display: inline-block;
-        padding: 8px;
-        color: white;
-        text-decoration: none;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        line-height: 15px;
-    }
-    p a{
-        color: #ff4d00;   
-    }
-    a {
-       color: #ff4d00;
-    }
-    li a:hover {
-        color: #ff4d00;
-        text-align: center;
-    }
-    .name{
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        text-align: center;
-        font-family: "trebuchet ms"; 
-        font-size: 36px;
-        color: #ff4d00;
-    }
-    .active {
-        color: #ff4d00;
-    }
-    .main-block {
-        width: 100%;
-    }
-    .main-image {
-        width: 100%;
-    }
-    .right-block {
-        width:100%;
-    }
-    .info{
-        width: 100%;
-        padding: 0;
-        text-align: justify;
-        font-family: "trebuchet ms"; 
-        font-size: 16px;
-        color: #44aa88;
-    }
-    #nav-bar{
-        margin-top: 5px;
-        margin-bottom: 5px;
-        line-height: 40px;
-    }
-    #projectTitle{
-        font-family: "trebuchet ms";
-        text-align: center;
-        margin-top: 5vh;
-        margin-bottom: 2vh;
-        line-height: 40px;
-        font-size: 36px;
-        color: #44aa88;
-    }
-     div.gallery {
-    margin: 5px;
-    display: inline-block;
-    width: 340px;
-     vertical-align: top;
+.fa {
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
 }
 
-div.gallery:hover {
-    background-color:#ffdd88;
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-linkedin {
+  background: white;
+  color: #007bb5;
 }
 
-div.gallery img {
-    width: 320px;
-    height: auto;
+.fa-youtube {
+  background: white;
+  color: #bb0000;
 }
 
-div.desc {
-    padding: 15px;
-    text-align: justify;
-    font-family: "trebuchet ms"; 
-    font-size: 16px;
-    color: #44aa88;
+.fa-instagram {
+  background: white;
+  color: #125688;
 }
-caption_text{
-    text-align: justify;
-    font-family: "trebuchet ms"; 
-    font-size: 16px;
-    color: #44aa88;
+
+.fa-tumblr {
+  background: white;
+  color:  #2c4762;
 }
-div a{
-       display: inline-block;
-        padding: 8px;
-        color: white;
-        text-decoration: none;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        line-height: 15px;
+
+.fa-github {
+  background: white;
+  color: #222222;
 }
-alink a{
-color: #ff4d00; 
-padding: 0px;
-}
-b{
-        width: 100%;
-        padding: 0;
-        text-align: center;
-        font-family: "trebuchet ms"; 
-        font-size: 22px;
-        color: #ff4d00; 
-    }
-    b:hover{
-        color: #000000;
-    }
-    
-    .nounderline{
-        text-decoration:none
-    }
-   
 </style>
-</head>
-<script type="text/javascript" src="js/app.js"></script>
 <body>
-    <header class="name">
-       <h1>cassie mullins</h1>
-    </header>
-    <table width="100%">
-        <tr>
-            <td width="25%"></td>
-            <td width="50%">
-                <center>
-                    <ul>
-                        <li><a class="active" href="https://cmullins77.github.io/index.html">Home</a></li>
-                        <li><a href="https://cmullins77.github.io/bio.html">Bio</a></li>
-                        <li><a href="https://cmullins77.github.io/resume.html">Resume</a></li>
-                        <li><a href="https://cmullins77.github.io/portfolio.html">Portfolio</a></li>
-                        <li><a href="https://cmullins77.github.io/contact.html">Contact</a></li>
-                    </ul>
-                </center>
-            </td>
-            <td width="25%"></td>
-        </tr>
-    </table>
-    <center>
-         <header>
-             <h2 id="projectTitle">Featured Project: Chain Reaction</h2>
-         </header>
-         <table width="50%">
-            <tr>
-                <td width="100%">
-                    <center style="margin-top: 3vw; margin-bottom: 3vw">
-                        <iframe width="560" height="316" padding-top: 56.25% src="https://www.youtube.com/embed/Zlrz7D3X20Q" frameborder="0" allowfullscreen></iframe>
-                    </center>
-                </td>
-            </tr>
-        </table>
-    <table>
-        <tr width="100%">
-                <td width="5%"></td>
-                <td width="90%">
-                    <center>
-                        <div class="gallery">
-                          <a target="assets/images/circle.png" href="assets/images/Chain_Reaction2.png">
-                            <img src="assets/images/Chain_Reaction2.png" alt="Mountains" width="600" height="400">
-                          </a>
-                          <div class="desc">Chain Reaction is a steam-punk 
-                          puzzle game make in Processing where two players
-                          must work together to fix a variety of broken machines.</div>
-                        </div>
-                        <div class="gallery">
-                          <a target="assets/images/circle.png" href="assets/images/Chain_Reaction1.PNG">
-                            <img src="assets/images/Chain_Reaction1.PNG" alt="Mountains" width="600" height="400">
-                          </a>
-                          <div class="desc">On top of the main puzzle mode there
-                          is also a freeplay mode where players can create their 
-                          own fun contraption.</div>
-                        </div>
-                        <div class="gallery">
-                          <a target="assets/images/circle.png" href="assets/images/Typewriter.png">
-                            <img src="assets/images/Typewriter.png" alt="Mountains" width="600" height="400">
-                          </a>
-                          <div class="desc">The steampunk vector art style we went with 
-                          was a lot of fun to work with, and produced some nice results.</div>
-                        </div>
-                    </center>
-                </td>
-                <td width="5%"></td>
-            </tr>
-        </table>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>Cassie Mullins</b></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#works" class="w3-bar-item w3-button">Works</a>
+      <a href="#resume" class="w3-bar-item w3-button">Resume</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="header.png" alt="Architecture" width="1500" height="800">
+  
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="works">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Works</h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">City Fables</div>
+        <img src="City Fables.png" alt="City Fables" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Invisible Cities</div>
+        <img src="invisible cities.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">ShopWai</div>
+        <img href="https://devpost.com/software/shopwai" src="shopwai.png" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Bill's Excellent Adventure</div>
+        <img src="Bill's Excellent Adventure.png" alt="House" style="width:100%">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Chain Reaction</div>
+        <img src="chain reaction.png" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">VG Dev</div>
+        <img src="VGDev.png" alt="House" style="width:99%">
+      </div>
+    </div>
+    <!--<div class="w3-col l3 m6 w3-margin-bottom">-->
+    <!--  <div class="w3-display-container">-->
+    <!--    <div class="w3-display-topleft w3-black w3-padding">Renovated</div>-->
+    <!--    <img src="/w3images/house4.jpg" alt="House" style="width:99%">-->
+    <!--  </div>-->
+    <!--</div>-->
+    <!--<div class="w3-col l3 m6 w3-margin-bottom">-->
+    <!--  <div class="w3-display-container">-->
+    <!--    <div class="w3-display-topleft w3-black w3-padding">Barn House</div>-->
+    <!--    <img src="/w3images/house3.jpg" alt="House" style="width:99%">-->
+    <!--  </div>-->
+    <!--</div>-->
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="resume">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Resume</h3>
+    <p><b>EDUCATION:</b></p>
+    <p>GEORGIA INSTITUTE OF TECHNOLOGY</p>
+    <p>Expected Graduation May 2019</p>
+    <p>Bachelor of Science in Computational Media</p>
+    <ul>
+      <li>Threads: Media and Interaction Design & Experimental Media</li>
+      <li>GPA: 3.92</li>
+      <li>Zell Miller Scholarship</li>
+    </ul>
+     <p><b>EXPERIENCE:</b></p>
+     <p>GEORGIA TECH AUGMENTED ENVIORNMENTS LAB, August 2017 - present</p>
+     <p>Undergraduate Research Assistant</p>
+      <ul>
+      <li>Works with Argon, an Augmented Reality Browser developed by the lab</li>
+      <li>Learning Web and Unity Development</li>
+      <li>Designing UX for Desktop, Mobile, and AR and VR environments</li>
+      <li>Demonstrate and Explain Projects at GVU Demo Days</li>
+    </ul>
+     <p>TECHNOLOGY INTEGREATION GROUP, June 2016 – August 2016</p>
+     <p>TIG Part-time Summer Job</p>
+      <ul>
+      <li>Worked with Corel Draw to create engraving images</li>
+      <li>Setup, operated, and cleaned laser etcher</li>
+      <li>Worked with a team to get laptops ready for school usage</li>
+    </ul>
+     <p>TURNER BROADCASTING, June 2014 – August 2014</p>
+     <p>Cartoon Network Digital Media Internship</p>
+      <ul>
+      <li>Tested games and apps in the QA department</li>
+      <li>Reported bugs or needed improvements to game developers</li>
+      <li>Translated game to several languages using HTML</li>
+    </ul>
+    <p><b>Skils:</b></p>
+    <p>Digital:</p>
+    <ul>
+      <li>Processing</li>
+      <li>Python</li>
+      <li>Java</li>
+      <li>C#</li>
+      <li>C</li>
+      <li>HTML</li>
+      <li>JavaScript</li>
+      <li>CSS</li>
+      <li>GIMP</li>
+      <li>Photoshop</li>
+      <li>Illustrator</li>
+      <li>Indesign</li>
+      <li>Unity</li>
+      <li>Blender</li>
+      <li>Maya</li>
+      <li>Corel Draw</li>
+      <li>Augmented & Virtual Reality Design</li>
+    </ul>
+    <p>Languages:</p>
+    <ul>
+      <li>English</li>
+      <li>German</li>
+    </ul>
+    <p>Hardware:</p>
+    <ul>
+      <li>Lighting and Sound Equipment</li>
+      <li>Basic Circuitry</li>
+      <li>Network Router System</li>
+    </ul>
+    <p><b>LEADERSHIP & ACTIVITIES:</b></p>
+    <p>VG DEV</p>
+    <p>Public Relations & artist/designer</p>
+    <p>Games:</p>
+    <ul>
+      <li>Card Ninjas – Recipient of Deleonic Award</li>
+      <li>Edge of Infinity</li>
+      <li>Scroll Through Slipspace</li>
+      <li>Hellion Hills Retirement Home</li>
+      <li>YeggQuest</li>
+      <li>Space Haulers</li>
+      <li>Super Sword: Skeleton Slayers</li>
+      <li>Trouble on Beryl Isle</li>
+    </ul>
+    <p>DESIGN CLUB</p>
+    <p>HUMANITECH</p>
+    <p>WEB DEVELOPEMENT CLUB</p>
+    <p>GOURD ART CLUB</p>
+    <p>FIRST ROBOTICS</p>
+    <p></p>
+    <a href="CassieMullinsResume.pdf" class="w3-button w3-black">Download Resume</a>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p><b>EMAIL:</b> mullins.cassie@gatech.edu   <b>PHONE:</b> 678-451-7878</p>
+    <a href="https://www.linkedin.com/in/cassie-mullins-b17a0379/" class="fa fa-linkedin"></a>
+    <a href="https://www.youtube.com/channel/UCskkFW2VnEvN8LcXo1FWoBQ?&ab_channel=CassieMullins" class="fa fa-youtube"></a>
+    <a href="https://www.instagram.com/cassielynn12358/" class="fa fa-instagram"></a>
+    <a href="https://github.com/cmullins77" class="fa fa-github"></a>
+    <a href="https://cassielynnmullins.tumblr.com/" class="fa fa-tumblr"></a>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+</footer>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
 </body>
 </html>
