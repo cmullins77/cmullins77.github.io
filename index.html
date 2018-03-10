@@ -7,6 +7,11 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+.resume-column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
 .fa {
   font-size: 30px;
   width: 50px;
@@ -57,7 +62,6 @@
     </div>
   </div>
 </div>
-
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
   <img class="w3-image" src="header.png" alt="Architecture" width="1500" height="800">
@@ -66,7 +70,7 @@
 
 <!-- Page content -->
 <div class="w3-content w3-padding" style="max-width:1564px">
-
+<center>
   <!-- Project Section -->
   <div class="w3-container w3-padding-32" id="works">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Works</h3>
@@ -76,25 +80,25 @@
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         <div class="w3-display-topleft w3-black w3-padding">City Fables</div>
-        <img src="City Fables.png" alt="City Fables" style="width:100%">
+        <a href="#cityfables"><img src="City Fables.png" alt="City Fables" style="width:100%"></a>
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         <div class="w3-display-topleft w3-black w3-padding">Invisible Cities</div>
-        <img src="invisible cities.jpg" alt="House" style="width:100%">
+        <a href="#invisiblecities"><img src="invisible cities.jpg" alt="House" style="width:100%"></a>
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         <div class="w3-display-topleft w3-black w3-padding">ShopWai</div>
-        <img href="https://devpost.com/software/shopwai" src="shopwai.png" alt="House" style="width:100%">
+        <a href="https://devpost.com/software/shopwai"><img src="shopwai.png" alt="House" style="width:100%"></a>
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         <div class="w3-display-topleft w3-black w3-padding">Bill's Excellent Adventure</div>
-        <img src="Bill's Excellent Adventure.png" alt="House" style="width:100%">
+        <a href="#billsexcellentadventure"><img src="Bill's Excellent Adventure.png" alt="House" style="width:100%"></a>
       </div>
     </div>
   </div>
@@ -103,13 +107,13 @@
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         <div class="w3-display-topleft w3-black w3-padding">Chain Reaction</div>
-        <img src="chain reaction.png" alt="House" style="width:99%">
+        <a href="#chainreaction"><img src="chain reaction.png" alt="House" style="width:99%"></a>
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         <div class="w3-display-topleft w3-black w3-padding">VG Dev</div>
-        <img src="VGDev.png" alt="House" style="width:99%">
+        <a href="#vgdev"><img src="VGDev.png" alt="House" style="width:99%"></a>
       </div>
     </div>
     <!--<div class="w3-col l3 m6 w3-margin-bottom">-->
@@ -125,10 +129,11 @@
     <!--  </div>-->
     <!--</div>-->
   </div>
-
+  </center>
   <!-- About Section -->
   <div class="w3-container w3-padding-32" id="resume">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Resume</h3>
+    <center> <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Resume</h3></center>
+    <div class="resume-column">
     <p><b>EDUCATION:</b></p>
     <p>GEORGIA INSTITUTE OF TECHNOLOGY</p>
     <p>Expected Graduation May 2019</p>
@@ -138,7 +143,7 @@
       <li>GPA: 3.92</li>
       <li>Zell Miller Scholarship</li>
     </ul>
-     <p><b>EXPERIENCE:</b></p>
+    <p><b>EXPERIENCE:</b></p>
      <p>GEORGIA TECH AUGMENTED ENVIORNMENTS LAB, August 2017 - present</p>
      <p>Undergraduate Research Assistant</p>
       <ul>
@@ -161,24 +166,18 @@
       <li>Reported bugs or needed improvements to game developers</li>
       <li>Translated game to several languages using HTML</li>
     </ul>
-    <p><b>Skils:</b></p>
+  </div>
+  <div class="resume-column">
+     <p><b>Skils:</b></p>
     <p>Digital:</p>
     <ul>
       <li>Processing</li>
-      <li>Python</li>
-      <li>Java</li>
-      <li>C#</li>
-      <li>C</li>
-      <li>HTML</li>
-      <li>JavaScript</li>
-      <li>CSS</li>
+      <li>Python, Java, C#, & C</li>
+      <li>HTML, JavaScript, & CSS</li>
       <li>GIMP</li>
-      <li>Photoshop</li>
-      <li>Illustrator</li>
-      <li>Indesign</li>
+      <li>Photoshop, Illustrator, & Indesign</li>
       <li>Unity</li>
-      <li>Blender</li>
-      <li>Maya</li>
+      <li>Blender & Maya</li>
       <li>Corel Draw</li>
       <li>Augmented & Virtual Reality Design</li>
     </ul>
@@ -212,10 +211,11 @@
     <p>WEB DEVELOPEMENT CLUB</p>
     <p>GOURD ART CLUB</p>
     <p>FIRST ROBOTICS</p>
-    <p></p>
-    <a href="CassieMullinsResume.pdf" class="w3-button w3-black">Download Resume</a>
   </div>
-
+    <p></p>
+    <center><a href="CassieMullinsResume.pdf" class="w3-button w3-black">Download Resume</a></center>
+  </div>
+  <center>
   <!-- Contact Section -->
   <div class="w3-container w3-padding-32" id="contact">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
@@ -227,17 +227,128 @@
     <a href="https://cassielynnmullins.tumblr.com/" class="fa fa-tumblr"></a>
   </div>
   
+  <div class="w3-container w3-padding-32" id="cityfables">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">City Fables</h3>
+    <p>In collaboration with colleagues from Malmö University in Malmö Sweden, Georgia Tech's 
+    Augmented Environments helped to develop a mixed-reality experience that is a narrative of cultural 
+    moments from the first half of the twentieth century. The Swedish project, under the 
+    direction of Profs. Maria Engerberg and Per Linde, is called Stadsfabula. The AEL 
+    helped to create and test an Argon application that recognizes historic photographs
+    on the walls of a museum space and plays the video and audio content. This is an experiment in 
+    the use of the Argon-aframe platform to create a compelling multimedia experience that 
+    is also easy to program and to modify. </p>
+  </div>
+  
+  <div class="w3-container w3-padding-32" id="invisiblecities">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Invisible Cities</h3>
+    <p>Invisible Cities is a mobile dashboard for collaboratively developing AR monuments 
+    and expansive artworks in public squares. Users are able to create, share, and maintain
+    public AR works that can be shared with a small community or the entire city. Users can
+    engage in creating a socially engaged AR with their fellow citizens. In an age of 
+    post-truth and fake news, AR public monuments serve as a touchstone for cultural 
+    heritage and expression. Affording communities the ability to develop AR worlds that 
+    reflect their sentiments, is a key aspect of this project. The research does take a cue 
+    from Italo Calvino's wonderful book, Invisible Cities.</p>
+    
+    <p>Invisible Cities started as a project using Georgia Tech's Augmented Environments Lab's 
+    augmented reality browser, Argon. The project was developed around that particular platform, and 
+    from there a desktop version using Google Maps rather than actual live camera feed was developed.</p><p>
+    The experience is available at: https://multi-user-community-ael.herokuapp.com/
+    </p>
+  </div>
+  
+  <div class="w3-container w3-padding-32" id="billsexcellentadventure">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Bill's Excellent Adventure</h3>
+    <p>One of the most interesting classes at Georgia Tech is CS 2261, Media Device Architecture, in
+    which students learn to make games for the GameBoy Advance. It was a fun challenge working with such 
+    a specific piece of hardware. There are a number of limitations working with a GameBoy that one
+    doesn't come across designing a game for a modern computer. There is far less storage space,
+    and far less screen real estate to work with. Designers are forced to come up with creative solutions
+    for both coding and art problems. We were able to learn about how these sort of devices worked by
+    learning to code very simple processes, such as turning on and off single pixels and getting button input.
+    </p>
+    
+    <p>
+      Over the course of the semester I created a number of different games, such as modified versions of 
+      Space Invaders and Vanguard, but it was all leading up to one final game. Bill's Excellent Adventure is
+      a cute silly little game about an overworked CS professor who finally gets to sleep only to find himself 
+      trapped in a dream version of his classroom and forced to run around fixing various pieces of classroom 
+      equipment in little minigames.</p>
+      <p>
+      One such minigame is a platforming challene where the screen is split into
+      4 different colored columns, white, cyan, yellow, and magenta, and there are a series of white, cyan, yellow,
+      and magenta platforms. When a platform is in the column of its color it cannot be jumped on. For example, if
+      a yellow platform is in the yellow column the player cannot see it or jump on it. The player may swap the column
+      colors to reveal new platforms, but at the risk of the platform they are on disapearing. Its a simple little
+      game with a goal of simply reaching the top of the map, but proved fun to play and let me learn how to tweak
+      game mechanics to make something that not only works but is satisfying.
+    </p>
+    <p>
+      The game may be played by downloading the gameboy emulator, virtual boy advanced, and the game itself.
+    </p>
+    <a href="assets/files/vba.exe" class="w3-button w3-black">Download VBA</a>
+    <a href="assets/files/BillsExcellentAdventure.gba" class="w3-button w3-black">Download Bill's Excellent Adventure</a>
+  </div>
+  
+  <div class="w3-container w3-padding-32" id="chainreaction">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Chain Reaction</h3>
+    <p>Processing is a software sketchbook and language for computer graphics. It is used in many Georgia Tech computer 
+    graphics classes, including Intro to Computational Media, Constructing the Movie Image, and Computer Graphics. While
+    I have created a number of processing projects both for class and outside of class, the project I'm most proud of is 
+    Chain Reaction. It is a puzzle game that requires players to place gears and chains of various sizes on a peg board 
+    to go from one spinning gear to one or several stationary ones. The twist is that the game is played by two players, 
+    each of whom can only see their half of the available pieces and the board. The players aren't allowed to talk to each 
+    other and must figure out how to solve the puzzles simply by working together. This was one of the first big projects 
+    I have done in Processing and I therefore learned a great deal about using the software, as well as about designing and 
+    creating a fun playable game.
+    </p>
+    <iframe width="400" height="300" src="https://www.youtube.com/embed/Zlrz7D3X20Q" frameborder="0" allowfullscreen></iframe>
+  </div>
+  
+  <div class="w3-container w3-padding-32" id="vgdev">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">VG Dev</h3>
+    <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <img src="assets/images/Versus.png" alt="City Fables" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <img src="assets/images/robot.png" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <img src="assets/images/Example Pipes.png" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <img src="assets/images/Sword2.png" alt="House" style="width:100%">
+      </div>
+    </div>
+  </div>
+    <p>
+VG Dev is a club in the Georgia Tech Collge of Computing. Each semester teams develope a demo a handful of entirely student 
+created games, everything from the coding and art to level design, music, and story creation. I have been a member of VG Dev since
+my freshman year and have recently taken a leadership position in the club as the PR person. I've had the oportunity to work on a 
+number of great games over the years. All the games that I've worked on, as well as many other great student creations can be found
+at the VG Dev website.</p>
+<a href="http://vgdev.gtorg.gatech.edu/profile/Cmullins/" class="w3-button w3-black">VG Dev Website</a>
+  </div>
+  </center>
+  
+  
 <!-- End page content -->
 </div>
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-16">
 </footer>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 -->
-
 </body>
 </html>
