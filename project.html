@@ -20,12 +20,27 @@
 * {
     box-sizing: border-box;
 }
-img{
+tw-sidebar tw-icon.redo {
+	color:#fff;
+	opacity:0.8;
+}
+tw-sidebar tw-icon.undo {
+	color:#fff;
+	opacity:0.8;
+}
+tw-sidebar tw-icon.redo:hover {
+	opacity:1;
+}
+tw-sidebar tw-icon.undo:hover {
+	opacity:1;
+}
+#image{
 	display: block;
     margin-left: auto;
     margin-right: auto;
 	margin-top: 20px;
     width: 80%;
+	border-radius:20px;
 }
 
 /* Create two equal columns that floats next to each other */
@@ -48,10 +63,17 @@ h{
 	font-size: 60px;
 	line-height:64px;
 }
+h1{
+	color:#A6B890;
+	font-family: 'Fredoka One', cursive;
+	font-size: 48px;
+	line-height:54px;
+	font-weight:100;
+}
 #logline{
 font-family: 'Roboto', sans-serif;
 	color:#402F3F;
-	font-size: 20px;
+	font-size: 16px;
 	border-radius: 20px;
 	padding-left: 30px;
 	padding-right:30px;
@@ -60,7 +82,7 @@ font-family: 'Roboto', sans-serif;
 }
 #note{
 	font-family: 'Roboto', sans-serif;
-	background-color: #D0CB93;
+	background-color: #fff;
 	color:#402F3F;
 	font-size: 16px;
 	border-radius: 20px;
@@ -70,7 +92,7 @@ font-family: 'Roboto', sans-serif;
 }
 #passage{
 	font-family: 'Roboto', sans-serif;
-	background: #D0CB93;
+	background: #fff;
 	color:#402F3F;
 	font-size: 16px;
 	border-radius: 20px;
@@ -102,13 +124,13 @@ font-family: 'Roboto', sans-serif;
 .enchantment-link:hover, tw-link:hover {
 	color: #B9485A;
 }
-.enchantment-link:visited, tw-link:visited {
-	color:#CE9770;
+.enchantment-link.visited, tw-link.visited {
+	color: #CE9770;
+	font-family: 'Roboto', sans-serif;
+	font-size:36px;
 }
-img{
-	width: 40vw;
-	border-radius:20px;
-	
+.enchantment-link.visited:hover, tw-link.visited:hover {
+	color: #B9485A;
 }
 #caption{
 	font-family: 'Roboto', sans-serif;
@@ -122,8 +144,23 @@ img{
 	padding-bottom: 1px;
 	width:40vw;
 }
-
-
+p{
+	font-size:16px;
+}
+#imgGallery{
+  display: inline-block;
+	margin-left: auto;
+  margin-right: auto;
+	margin-top: 20px;
+  width: 30%;
+	margin:1.666667%;
+}
+.imgLink{
+	opacity:1;
+}
+.imgLink:hover{
+	opacity:0.2;
+}
 
 
 
@@ -144,7 +181,7 @@ On February 3, 1959 three young musicians lost their lives in a tragic plane cra
 &lt;/p&gt;&lt;/div&gt;
 
 &lt;center&gt;&lt;div id=&quot;enter&quot;&gt;[[Next|Musicians]]&lt;/div&gt;&lt;/center&gt;
-</tw-passagedata>
+&lt;link href=&quot;https://fonts.googleapis.com/css?family=Fredoka+One|Roboto&quot; rel=&quot;stylesheet&quot;&gt;</tw-passagedata>
 <tw-passagedata pid="2" name="Homepage" tags="" position="28,32">&lt;center&gt;&lt;h&gt;The Day The Music Died&lt;/h&gt;&lt;/center&gt;
 
 &lt;center&gt;
@@ -156,69 +193,106 @@ On February 3, 1959 three young musicians lost their lives in a tragic plane cra
 &lt;source src=&quot;http://www.prism.gatech.edu/~cmullins7/MuseeMemoire/ambient.mp3&quot; /&gt;
 &lt;/audio&gt;</tw-passagedata>
 <tw-passagedata pid="3" name="Sources" tags="" position="28,184">Double-click this passage to edit it.</tw-passagedata>
-<tw-passagedata pid="4" name="Musicians" tags="" position="313,38">&lt;center&gt;[[Buddy Holly|BH1]]&lt;/center&gt;
-&lt;img src=&quot;http://www.prism.gatech.edu/~cmullins7/MuseeMemoire/Carroll1-4.jpg&quot;&gt;
+<tw-passagedata pid="4" name="Musicians" tags="" position="313,38">&lt;center&gt;&lt;h1&gt;The Musicians&lt;/h1&gt;&lt;/center&gt;
+
+&lt;center&gt;[[Buddy Holly|BH1]]&lt;/center&gt;
+&lt;img id=&quot;image&quot; src=&quot;Images/BH1.jpg&quot;&gt;
 &lt;p&gt;&lt;div id=&quot;note&quot;&gt;
 Buddy Holly looked like your prototypical 50s geek, especially with his iconic horn-rimmed glasses, but he was anything but typical. The Rock &amp; Roll hall of fame states rather boldly that “Rock &amp; Roll as we know it wouldn’t exist without Buddy Holly” and Rolling Stone ranks him as the 13th greatest artist of all time. He was a singer, guitarist, songwriter, and later producer and he loved playing for a live audience. John Mellencamp wrote that “he was one of the first to get away from the Tin Pan Alley songwriting factory and communicate directly, honestly with his audience.” He has influenced a huge number of artists with his style, music, and band, The Crickets.&lt;/div&gt;
 
 
 &lt;center&gt;[[Ritchie Valens|RV1]]&lt;/center&gt;
-&lt;img src=&quot;http://www.prism.gatech.edu/~cmullins7/MuseeMemoire/Carroll1-4.jpg&quot;&gt;
+&lt;img id=&quot;image&quot; src=&quot;http://www.prism.gatech.edu/~cmullins7/MuseeMemoire/Carroll1-4.jpg&quot;&gt;
 &lt;div id=&quot;passage&quot;&gt;“Although his life was tragically cut short, Ritchie Valens’ inimitable blend of Mexican dance music and rock has influenced generations of rockers.”(4) Ritchie Valen’s recording career lasted only about eight months, but in that time he had a number of hits, including “Donna” and “La Bamba”, and left a lasting influence on future Hispanic musicians in the United States.&lt;/div&gt;
 
 
 &lt;center&gt;[[The Big Bopper|BB1]]&lt;/center&gt;
-&lt;img src=&quot;http://www.prism.gatech.edu/~cmullins7/MuseeMemoire/Carroll1-4.jpg&quot;&gt;
+&lt;img id=&quot;image&quot; src=&quot;http://www.prism.gatech.edu/~cmullins7/MuseeMemoire/Carroll1-4.jpg&quot;&gt;
 &lt;div id=&quot;passage&quot;&gt;While JP Richardson, The Big Bopper, may not have reached quite the same level of fame as Buddy Holly or reverence as Ritchie Valens he was still and incredibly talented musician and someone who really understood the music industry from his years working in radio. He predicted changes to the industry that would ultimately be proved correct and left behind a great body of work both in his own music and recorded performances and in the songs he penned for other artists.&lt;/div&gt;&lt;/p&gt;
 
 
 &lt;center&gt;
-[[Next|The Crash]]&lt;/center&gt;</tw-passagedata>
-<tw-passagedata pid="5" name="BH1" tags="" position="170,194">Charles Hardin Holley, better known as Buddy Holly, was born in Lubbock, Texas on September 7, 1936, the youngest of four children. He came from a relatively poor family, but they were quite musical and at a young age he learned to play both the violin and piano. It was his elder brothers who introduced him to the guitar when he was 10 years old and taught him the basics. Holly’s parents were great supporters of his love for music and later his career, “even penning a letter to the editor of Lubbock&#39;s newspaper in defense of rock &#39;n&#39; roll-loving teenagers (1)”. While Rock and Roll is often seen as part of teenage rebellion and the musicians themselves symbols of this, there was very little of this with Buddy Holly. By all accounts he came across as a completely respectable young gentleman, raised in a good church-going family in the heart of Texas. Still though, he dreamed of getting to leave that middle of nowhere town and perform for people across the country and even over-seas. 
+[[Next|The Crash]]&lt;/center&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css?family=Fredoka+One&quot; rel=&quot;stylesheet&quot;&gt;</tw-passagedata>
+<tw-passagedata pid="5" name="BH1" tags="" position="170,194">&lt;p&gt;&lt;div id=&quot;passage&quot;&gt;Charles Hardin Holley, better known as Buddy Holly, was born in Lubbock, Texas on September 7, 1936, the youngest of four children. He came from a relatively poor family, but they were quite musical and at a young age he learned to play both the violin and piano. It was his elder brothers who introduced him to the guitar when he was 10 years old and taught him the basics. Holly’s parents were great supporters of his love for music and later his career, “even penning a letter to the editor of Lubbock&#39;s newspaper in defense of rock &#39;n&#39; roll-loving teenagers (1)”. While Rock and Roll is often seen as part of teenage rebellion and the musicians themselves symbols of this, there was very little of this with Buddy Holly. By all accounts he came across as a completely respectable young gentleman, raised in a good church-going family in the heart of Texas. Still though, he dreamed of getting to leave that middle of nowhere town and perform for people across the country and even over-seas. &lt;/div&gt;&lt;/p&gt;
+[[&lt;img id=&quot;imgGallery&quot; class=&quot;imgLink&quot; src=&quot;http://www.prism.gatech.edu/~cmullins7/MuseeMemoire/Carroll1-4.jpg&quot;&gt;|Buddy]]&lt;img id=&quot;imgGallery&quot; src=&quot;http://www.prism.gatech.edu/~cmullins7/MuseeMemoire/Carroll1-4.jpg&quot;&gt;&lt;img id=&quot;imgGallery&quot; src=&quot;http://www.prism.gatech.edu/~cmullins7/MuseeMemoire/Carroll1-4.jpg&quot;&gt;
 
-[[Back|Musicians]] [[Next|BH2]]</tw-passagedata>
-<tw-passagedata pid="6" name="RV1" tags="" position="309,192">Richard Steven Valenzuela, also known as Ritchie Valens, was born May 13, 1941, and at 17 years old was the youngest to die in the plane crash. Ritchie was of Mexican descent and grew up in Pacoima, a prominently Hispanic neighborhood in Los Angeles. Therefore he grew up listening to a lot of traditional Mexicans music, like mariachi and flamenco music. But he was also a fan of many R&amp;B groups as well as some of the great early Rock &amp; Roll stars, like Little Richard, Bo Diddley, and even Buddy Holly. 
+&lt;center&gt;
+[[Next|BH2]]
+&lt;/center&gt;
+</tw-passagedata>
+<tw-passagedata pid="6" name="RV1" tags="" position="309,192">&lt;p&gt;&lt;div id=&quot;passage&quot;&gt;Richard Steven Valenzuela, also known as Ritchie Valens, was born May 13, 1941, and at 17 years old was the youngest to die in the plane crash. Ritchie was of Mexican descent and grew up in Pacoima, a prominently Hispanic neighborhood in Los Angeles. Therefore he grew up listening to a lot of traditional Mexicans music, like mariachi and flamenco music. But he was also a fan of many R&amp;B groups as well as some of the great early Rock &amp; Roll stars, like Little Richard, Bo Diddley, and even Buddy Holly. &lt;/div&gt;&lt;/p&gt;
+&lt;center&gt;
+[[Next|RV2]]
+&lt;/center&gt;</tw-passagedata>
+<tw-passagedata pid="7" name="BB1" tags="" position="443,193">&lt;p&gt;&lt;div id=&quot;passage&quot;&gt;Jiles Perry Richardson Jr, widely known as the Big Bopper, was born October 24, 1930 in Sabine, Texas. His mother taught him to play both the piano and guitar and he always had a passion for music, hanging around the local radio station, KTRM, after school. He studied pre-law at the local university, Lamar College, and also worked part time at the radio station. He worked at the station for 10 years, with a 2 year break from 1955 to 1957 in which he was drafted in the army. He “hosted an easy-listening show for years”, but wanted to “capitalize on teenagers&#39; growing demand for rhythm-and-blues music”(5). The Big Bopper became his radio alter ego, jive-talking, goofy, and theatrical. He even hosted a 6 day continuous radio broadcast, a world record at the time, in May 1957, which brought attention to himself and KTRM.&lt;/div&gt;&lt;/p&gt;
+&lt;center&gt;
+[[Next|BB2]]
+&lt;/center&gt;</tw-passagedata>
+<tw-passagedata pid="8" name="The Crash" tags="" position="448,38">&lt;center&gt;&lt;h1&gt;The Accident&lt;/h1&gt;&lt;/center&gt;
 
-[[Back|Musicians]] [[Next|RV2]]</tw-passagedata>
-<tw-passagedata pid="7" name="BB1" tags="" position="443,193">Jiles Perry Richardson Jr, widely known as the Big Bopper, was born October 24, 1930 in Sabine, Texas. His mother taught him to play both the piano and guitar and he always had a passion for music, hanging around the local radio station, KTRM, after school. He studied pre-law at the local university, Lamar College, and also worked part time at the radio station. He worked at the station for 10 years, with a 2 year break from 1955 to 1957 in which he was drafted in the army. He “hosted an easy-listening show for years”, but wanted to “capitalize on teenagers&#39; growing demand for rhythm-and-blues music”(5). The Big Bopper became his radio alter ego, jive-talking, goofy, and theatrical. He even hosted a 6 day continuous radio broadcast, a world record at the time, in May 1957, which brought attention to himself and KTRM.
+&lt;p&gt;&lt;div id=&quot;passage&quot;&gt;In winter 1959 the Winter Dance Party tour assembled: Buddy Holly, Ritchie Valens, The Big Bopper, as well as vocal group, Dion and the Belmonts. Buddy Holly, having just come out of the Crickets breakup, needed the money and assembled a band of Waylon Jennings, Tommy Allsup, and Carl Bunch. Ritchie Valens was a young breakout star touring his singles “Donna” and “La Bamba”. The Big Bopper having just come off the success of “Chantilly Lace” was using the tour to further promote himself.&lt;/div&gt;&lt;br&gt;
 
-[[Back|Musicians]] [[Next|BB2]]</tw-passagedata>
-<tw-passagedata pid="8" name="The Crash" tags="" position="448,38">In winter 1959 the Winter Dance Party tour assembled: Buddy Holly, Ritchie Valens, The Big Bopper, as well as vocal group, Dion and the Belmonts. Buddy Holly, having just come out of the Crickets breakup, needed the money and assembled a band of Waylon Jennings, Tommy Allsup, and Carl Bunch. Ritchie Valens was a young breakout star touring his singles “Donna” and “La Bamba”. The Big Bopper having just come off the success of “Chantilly Lace” was using the tour to further promote himself. 
-The tour itself was horribly mismanaged, with shows scheduled across the northern United States in the dead of winter, often hundreds of miles apart and ordered in such a way that the performers were forced to zig zag across the frozen country-side. The bus was old, drafty, and cramp, with a heating system that often broke down. On February 1st they even had to leave behind Carl Bunch at a hospital after he had gotten frostbite in his feet from sitting on the cold bus. That day they had performed in Green Bay, Wisconsin and on February 2nd they had to drive over 350 miles to Clear Lake, Iowa for a performance that night. The day after that they were slated to perform in Moorhead, Minnesota, a further 365 mile drive. 
-By then Buddy Holly had had enough. He made arrangements with a local flight service for 21 year old pilot, Roger Peterson, to fly himself and his two remaining band members, Waylon Jennings and Tommy Allsup, from Clear Lake after their show to Fargo, North Dakota, which was near Moorhead. Holly planned to use the extra time to get a little rest and do everyone’s laundry before the bus arrived. By this point a number of the musicians were also sick, including the Big Bopper, and Jennings agreed to give him his seat on the plane so he could also rest up before the next show. Valens, wanting the last seat on the plane, convinced Allsup to flip a coin for it. Valens won and by 12:30 am the 3 musicians had bundled into the plane for their flight.
-Nobody knows for sure what caused the little plane to crash only minutes after takeoff, but the “best guess is that Peterson flew directly into the blizzard, lost visual reference and accidentally flew down instead of up” (7). The next morning people were finally able to reach the crash site. There were no survivors.
-At the time there was no policy “against releasing victims&#39; names until after the families had been notified”(7). Most of the victims’ family and friends found out about their deaths on the radio or from friends who had heard about it. Buddy Holly’s mother collapsed when she turned on the radio. His young pregnant wife suffered a miscarriage. All in all it was a tragic day, the loss of 3 promising musicians and the loss of 4 young lives.
+&lt;div id=&quot;passage&quot;&gt;The tour itself was horribly mismanaged, with shows scheduled across the northern United States in the dead of winter, often hundreds of miles apart and ordered in such a way that the performers were forced to zig zag across the frozen country-side. The bus was old, drafty, and cramp, with a heating system that often broke down. On February 1st they even had to leave behind Carl Bunch at a hospital after he had gotten frostbite in his feet from sitting on the cold bus. That day they had performed in Green Bay, Wisconsin and on February 2nd they had to drive over 350 miles to Clear Lake, Iowa for a performance that night. The day after that they were slated to perform in Moorhead, Minnesota, a further 365 mile drive. &lt;/div&gt;&lt;br&gt;
 
-[[Next|Deaths]]</tw-passagedata>
-<tw-passagedata pid="9" name="BH2" tags="" position="170,344">In high school Buddy met his good friend Bob Montgomery, who would later go on to be a successful songwriter, and the two of them formed a musical duo with Montgomery as lead singer and Holly doing harmonies. They performed at their school and later, with the addition of Sonny Curtis, on the local radio and it became clear that Holly was an incredible singer. After high school, in 1955, Elvis came to town and while previously their music had been country and bluegrass but afterwards they became “Elvis Clones”(3). Later that year he and a band consisting of Curtis and Don Guess would open for Elvis on a number of occasions. In 1956 the band, then called Buddy Holly and the Two Tones, went to Nashville and signed a deal with Decca, but Holly had little influence on the music they recorded and they were hardly promoted by the company. The band eventually became known as the Crickets and came to be comprised of Buddy Holly, Jerry Allison, Joe B. Mauldin, and Niki Sullivan.
+&lt;div id=&quot;passage&quot;&gt;By then Buddy Holly had had enough. He made arrangements with a local flight service for 21 year old pilot, Roger Peterson, to fly himself and his two remaining band members, Waylon Jennings and Tommy Allsup, from Clear Lake after their show to Fargo, North Dakota, which was near Moorhead. Holly planned to use the extra time to get a little rest and do everyone’s laundry before the bus arrived. By this point a number of the musicians were also sick, including the Big Bopper, and Jennings agreed to give him his seat on the plane so he could also rest up before the next show. Valens, wanting the last seat on the plane, convinced Allsup to flip a coin for it. Valens won and by 12:30 am the 3 musicians had bundled into the plane for their flight.&lt;/div&gt;&lt;br&gt;
 
-[[Back|Musicians]] [[Next|BH3]]</tw-passagedata>
-<tw-passagedata pid="10" name="BH3" tags="" position="170,494">In summer of 1956 they wrote and recorded the song, “That’ll be the Day”, but the recording company was less than impressed. Holly and the Crickets switched labels and began working with manager Norman Petty who saw their potential. “That’ll be the Day” was released in 1957 and topped the US charts. They later went on to record a number of hits such as “Peggy Sue” and “Oh, Boy!”
+&lt;div id=&quot;passage&quot;&gt;Nobody knows for sure what caused the little plane to crash only minutes after takeoff, but the “best guess is that Peterson flew directly into the blizzard, lost visual reference and accidentally flew down instead of up” (7). The next morning people were finally able to reach the crash site. There were no survivors.&lt;/div&gt;&lt;br&gt;
 
-[[Back|Musicians]] [[Next|BH4]]</tw-passagedata>
-<tw-passagedata pid="11" name="BH4" tags="" position="170,644">In March 1958, Buddy Holly toured Australia and the UK. Since at the time Rock &amp; Roll was purely American the tour influenced a large number of British teenagers who would later become part of the British invasion. The Beatles even took inspiration from the Crickets in naming their band. The Crickets were also probably the first band to have the lead guitar, rhythm guitar, bass, and drums lineup that has become standard for rock bands since. 
-Later that same year the band broke up and not too long after Buddy Holly was dead, but his legacy lives on in his music and the many people he influenced. 
+&lt;div id=&quot;passage&quot;&gt;At the time there was no policy “against releasing victims&#39; names until after the families had been notified”(7). Most of the victims’ family and friends found out about their deaths on the radio or from friends who had heard about it. Buddy Holly’s mother collapsed when she turned on the radio. His young pregnant wife suffered a miscarriage. All in all it was a tragic day, the loss of 3 promising musicians and the loss of 4 young lives.&lt;/div&gt;&lt;/p&gt;
 
+&lt;center&gt;[[Next|Deaths]]&lt;/center&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css?family=Fredoka+One&quot; rel=&quot;stylesheet&quot;&gt;</tw-passagedata>
+<tw-passagedata pid="9" name="BH2" tags="" position="170,344">&lt;p&gt;&lt;div id=&quot;passage&quot;&gt;In high school Buddy met his good friend Bob Montgomery, who would later go on to be a successful songwriter, and the two of them formed a musical duo with Montgomery as lead singer and Holly doing harmonies. They performed at their school and later, with the addition of Sonny Curtis, on the local radio and it became clear that Holly was an incredible singer. After high school, in 1955, Elvis came to town and while previously their music had been country and bluegrass but afterwards they became “Elvis Clones”(3). Later that year he and a band consisting of Curtis and Don Guess would open for Elvis on a number of occasions. In 1956 the band, then called Buddy Holly and the Two Tones, went to Nashville and signed a deal with Decca, but Holly had little influence on the music they recorded and they were hardly promoted by the company. The band eventually became known as the Crickets and came to be comprised of Buddy Holly, Jerry Allison, Joe B. Mauldin, and Niki Sullivan.
+&lt;/div&gt;&lt;/p&gt;
+&lt;center&gt;
+[[Next|BH3]]
+&lt;/center&gt;</tw-passagedata>
+<tw-passagedata pid="10" name="BH3" tags="" position="170,494">&lt;p&gt;&lt;div id=&quot;passage&quot;&gt;In summer of 1956 they wrote and recorded the song, “That’ll be the Day”, but the recording company was less than impressed. Holly and the Crickets switched labels and began working with manager Norman Petty who saw their potential. “That’ll be the Day” was released in 1957 and topped the US charts. They later went on to record a number of hits such as “Peggy Sue” and “Oh, Boy!”&lt;/div&gt;&lt;/p&gt;
 
-[[Back|Musicians]]</tw-passagedata>
-<tw-passagedata pid="12" name="RV2" tags="" position="309,342">Ritchie learned how to play the guitar and when he was 16, joined a local band, The Silhouettes, who played small local shows. It is a story that by now we’re all very familiar with: a music loving kid learns to play guitar in his garage, starts a band in high school, and plays a few small gigs around town. Only Bob Keene, the owner of record label Del-Fi Records saw Ritchie perform at one of these gigs and invited him to audition for him. After one meeting Ritchie was signed onto the record label in May 1958.
+&lt;center&gt;[[Next|BH4]]&lt;/center&gt;</tw-passagedata>
+<tw-passagedata pid="11" name="BH4" tags="" position="170,644">&lt;p&gt;&lt;div id=&quot;passage&quot;&gt;In March 1958, Buddy Holly toured Australia and the UK. Since at the time Rock &amp; Roll was purely American the tour influenced a large number of British teenagers who would later become part of the British invasion. The Beatles even took inspiration from the Crickets in naming their band. The Crickets were also probably the first band to have the lead guitar, rhythm guitar, bass, and drums lineup that has become standard for rock bands since. &lt;br&gt;
+Later that same year the band broke up and not too long after Buddy Holly was dead, but his legacy lives on in his music and the many people he influenced. &lt;/div&gt;&lt;/p&gt;
 
-[[Back|Musicians]] [[Next|RV3]]</tw-passagedata>
-<tw-passagedata pid="13" name="RV3" tags="" position="309,492">His first single was “Come On, Let’s Go,” which found minor success. But then he released the single “Donna”, an ode to a high school sweetheart, and it rose steadily on the Billboard Hot 100 to ultimately peak at number 2. The B-side of that particular track was what is now his most recognizable song, “La Bamba”. “La Bamba” is a traditional Mexican folk song that Ritchie learned from a cousin and decided to put his own spin on it. In December he appeared on the Alan Freed Christmas show and American Bandstand, and gained national popularity.
+&lt;center&gt;[[Next|Musicians]]&lt;/center&gt;</tw-passagedata>
+<tw-passagedata pid="12" name="RV2" tags="" position="309,342">&lt;p&gt;&lt;div id=&quot;passage&quot;&gt;Ritchie learned how to play the guitar and when he was 16, joined a local band, The Silhouettes, who played small local shows. It is a story that by now we’re all very familiar with: a music loving kid learns to play guitar in his garage, starts a band in high school, and plays a few small gigs around town. Only Bob Keene, the owner of record label Del-Fi Records saw Ritchie perform at one of these gigs and invited him to audition for him. After one meeting Ritchie was signed onto the record label in May 1958.&lt;/div&gt;&lt;/p&gt;
+&lt;center&gt;
+[[Next|RV3]]
+&lt;/center&gt;</tw-passagedata>
+<tw-passagedata pid="13" name="RV3" tags="" position="309,492">&lt;p&gt;&lt;div id=&quot;passage&quot;&gt;His first single was “Come On, Let’s Go,” which found minor success. But then he released the single “Donna”, an ode to a high school sweetheart, and it rose steadily on the Billboard Hot 100 to ultimately peak at number 2. The B-side of that particular track was what is now his most recognizable song, “La Bamba”. “La Bamba” is a traditional Mexican folk song that Ritchie learned from a cousin and decided to put his own spin on it. In December he appeared on the Alan Freed Christmas show and American Bandstand, and gained national popularity.&lt;/div&gt;&lt;/p&gt;
+&lt;center&gt;
+[[Next|RV4]]
+&lt;/center&gt;</tw-passagedata>
+<tw-passagedata pid="14" name="RV4" tags="" position="309,642">&lt;p&gt;&lt;div id=&quot;passage&quot;&gt;Ritchie Valens was a hero in his hometown, as a Mexican kid from Pacoima playing rock music on national television. The fact that he was performing music in Spanish as well was incredibly important to this community. While “La Bamba” only charted at no. 22 originally a 1987 cover by Chicano Rock band Los Lobos hit no 1 and Valens himself is considered one of the founders of Chicano Rock. Chicano Rock isn’t so much a particular genre of rock music, but rather rock music of any type performed by Mexican Americans. With his huge crossover hit Valens paved the way for future Mexican American rockers like Los Lobos or Santana. Spanish music continues to be an important part of American culture as seen with artists from Selena to Shakira to recent successes coming out of the Label, Universal Latin, like the hugely popular “Despacito”, and much of this traces back to Ritchie Valens&#39; original success.  &lt;/div&gt;&lt;/p&gt;
+&lt;center&gt;[[Next|Musicians]]&lt;/center&gt;</tw-passagedata>
+<tw-passagedata pid="15" name="BB2" tags="" position="443,343">&lt;p&gt;&lt;div id=&quot;passage&quot;&gt;Having gained recognition in radio Richardson was signed to Mercury Records. At first he tried his hand at country music but his first single found little success. Inspired by the popular novelty songs “The Purple People Eater” by Sheb Wooley and “Witch Doctor” by David Seville (who would later become Alvin and the Chipmunks), Richardson wrote and recorded a response: “The Purple People Eater Meets the Witch Doctor”. Needing a b-side to the single he quickly wrote and recorded a goofy love song called “Chantilly Lace”. The record was released in August 1958 and “Chantilly Lace” proved to be wildly popular. The Big Bopper soon appeared on national television playing the song and went on tour hoping to earn enough money to buy his own radio station.&lt;/div&gt;&lt;/p&gt;
 
-[[Back|Musicians]] [[Next|RV4]]</tw-passagedata>
-<tw-passagedata pid="14" name="RV4" tags="" position="309,642">Ritchie Valens was a hero in his hometown, as a Mexican kid from Pacoima playing rock music on national television. The fact that he was performing music in Spanish as well was incredibly important to this community. While “La Bamba” only charted at no. 22 originally a 1987 cover by Chicano Rock band Los Lobos hit no 1 and Valens himself is considered one of the founders of Chicano Rock. Chicano Rock isn’t so much a particular genre of rock music, but rather rock music of any type performed by Mexican Americans. With his huge crossover hit Valens paved the way for future Mexican American rockers like Los Lobos or Santana. Spanish music continues to be an important part of American culture as seen with artists from Selena to Shakira to recent successes coming out of the Label, Universal Latin, like the hugely popular “Despacito”, and much of this traces back to Ritchie Valens&#39; original success.  
+&lt;center&gt;[[Next|BB3]]
+&lt;/center&gt;</tw-passagedata>
+<tw-passagedata pid="16" name="BB3" tags="" position="443,493">&lt;p&gt;&lt;div id=&quot;passage&quot;&gt;Richardson wasn’t just a great singer and performer, but also a brilliant song writer, and penned a number of songs that would go on to be hits for other artists. “White Lightnin” performed by George Jones and “Running Bear” performed by Johnny Preston both became No. 1 hits, as well as Jerry Lee Lewis’ cover of “Chantilly Lace”. &lt;br&gt;
 
-[[Back|Musicians]]</tw-passagedata>
-<tw-passagedata pid="15" name="BB2" tags="" position="443,343">Having gained recognition in radio Richardson was signed to Mercury Records. At first he tried his hand at country music but his first single found little success. Inspired by the popular novelty songs “The Purple People Eater” by Sheb Wooley and “Witch Doctor” by David Seville (who would later become Alvin and the Chipmunks), Richardson wrote and recorded a response: “The Purple People Eater Meets the Witch Doctor”. Needing a b-side to the single he quickly wrote and recorded a goofy love song called “Chantilly Lace”. The record was released in August 1958 and “Chantilly Lace” proved to be wildly popular. The Big Bopper soon appeared on national television playing the song and went on tour hoping to earn enough money to buy his own radio station.
+When he died Richardson already had a daughter and his wife, Adrianne, was pregnant with their son, Jay Perry Richardson or Bopper Jr. His children, and now grandchildren, have continued on to be great advocates of his musical and business genius and fight to keep his memory alive. They claim that he originated the idea of the music video. Panorams, visual jukeboxes, already existed in the 1940s and displayed short musical clips called soundies. However, some sources define a music video as not just a visual recording of a performance, but as having the objective to “promote and sell that performance” as well (6). In an interview with a British music magazine, DISC, Richardson stated that he believed that it would “ultimately become standard practice for every record artist to make a film of himself performing his record”(5). He recorded a number of these promotional music videos for his song, each of which is incredibly entertaining thanks to his musical talent and big personality.&lt;/div&gt;&lt;/p&gt; 
+&lt;center&gt;[[Next|Musicians]]&lt;/center&gt;</tw-passagedata>
+<tw-passagedata pid="17" name="Deaths" tags="" position="588,37">&lt;center&gt;&lt;h1&gt;Reactions to Musician Deaths&lt;/h1&gt;&lt;/center&gt;
 
-[[Back|Musicians]] [[Next|BB3]]</tw-passagedata>
-<tw-passagedata pid="16" name="BB3" tags="" position="443,493">Richardson wasn’t just a great singer and performer, but also a brilliant song writer, and penned a number of songs that would go on to be hits for other artists. “White Lightnin” performed by George Jones and “Running Bear” performed by Johnny Preston both became No. 1 hits, as well as Jerry Lee Lewis’ cover of “Chantilly Lace”. 
+&lt;p&gt;&lt;div id=&quot;passage&quot;&gt;In this day and age we are all pretty familiar with the typical response to a celebrity’s, especially a musician’s. In 1959 though, the day the music died gave the world the first tragic rock &amp; roll deaths and the music industry was shocked by the response. Buddy Holly’s most recent release, “It Doesn&#39;t Matter Anymore”, hadn’t been particularly successful, but after his death “record executives were shocked to see the song shoot up to number 13 on the charts.” (7) The demand for Buddy Holly’s music proved to be great and since he had been a prolific recorder the record company was able to spend the next 10 years releasing previously unreleased or unfinished recording sessions.&lt;/div&gt;&lt;br&gt;
 
-When he died Richardson already had a daughter and his wife, Adrianne, was pregnant with their son, Jay Perry Richardson or Bopper Jr. His children, and now grandchildren, have continued on to be great advocates of his musical and business genius and fight to keep his memory alive. They claim that he originated the idea of the music video. Panorams, visual jukeboxes, already existed in the 1940s and displayed short musical clips called soundies. However, some sources define a music video as not just a visual recording of a performance, but as having the objective to “promote and sell that performance” as well (6). In an interview with a British music magazine, DISC, Richardson stated that he believed that it would “ultimately become standard practice for every record artist to make a film of himself performing his record”(5). He recorded a number of these promotional music videos for his song, each of which is incredibly entertaining thanks to his musical talent and big personality. 
+&lt;div id=&quot;passage&quot;&gt;None of this is any surprise now. When Tom Petty passed away his sales increased by over 6000%, when the lead singer of the Cranberries died their sales went up by over 11,000%, and most recently Avicii has seen a massive surge of sales as well. Its not surprising that musician deaths can hit us particularly hard. The music that we listen to becomes the soundtrack to our lives and can become integral to our memories of particular times. Hearing an old song can bring you back to a particular memory or time in your life. “Peggy Sue” was one of the first videos I ever watched on YouTube. I remember loving the guitar and dancing around to it. That song brings me back to a particular point in my childhood and when I hear it I am reminded of feelings I had in that time. When a musician dies, though, our memories of their music is often distorted. People tend to project emotions onto memories of a song. What was once simply a fun piece of music they occasionally listened to becomes a pivotal part of their childhood that influenced who they are now.&lt;/div&gt;&lt;br&gt;
 
-[[Back|Musicians]]</tw-passagedata>
-<tw-passagedata pid="17" name="Deaths" tags="" position="588,37">Double-click this passage to edit it.</tw-passagedata>
+&lt;div id=&quot;passage&quot;&gt;There is also a kind of morbid fascination that comes with musician deaths, particularly when they die young. The 27 club, for example, is the subject of constant attention. Musicians, and rock &amp; rollers in particular, are known to lead wild partying lives that most people wouldn’t be able to. So in some sense watching them self-destruct through partying, drinking, and drugs is a way for people to live that lifestyle vicariously while facing none of the devastating consequences. And though the 27 club is simply a superstitious myth, it is true, according to a public health study done at Liverpool John Moores University, that musicians have “reduced survival compared to the general population”.(8)&lt;/div&gt;&lt;br&gt;
+
+&lt;div id=&quot;passage&quot;&gt;It is interesting to note that though the deaths of Holly, Valens, and Richardson garnered the first of this type of response from fans, their deaths were distinctly different from most other tragic musician deaths. Rather that dying of a drug overdose, as is relatively common, these 3 were killed in an accident that was not the result of any sort of wild or rebellious behavior of their own: they simply wanted to rest and do laundry, not the typical rock star story. So though their deaths foreshadowed the massive responses that occur when musicians pass away, perhaps they are also symbolic of a simpler, more innocent time, as we often retroactively view the 1950s as.&lt;/div&gt;&lt;br&gt;
+
+&lt;center&gt;[[Next|AmericanPie]]&lt;/center&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css?family=Fredoka+One&quot; rel=&quot;stylesheet&quot;&gt;</tw-passagedata>
+<tw-passagedata pid="18" name="Buddy" tags="" position="45,344">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="19" name="AmericanPie" tags="" position="713.0001,36">&lt;center&gt;&lt;h1&gt;American Pie&lt;/h1&gt;&lt;/center&gt;
+
+[[More|AP2]] [[Next|Conclusion]]
+&lt;link href=&quot;https://fonts.googleapis.com/css?family=Fredoka+One&quot; rel=&quot;stylesheet&quot;&gt;</tw-passagedata>
+<tw-passagedata pid="20" name="AP2" tags="" position="713,189">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="21" name="Conclusion" tags="" position="852,30">Double-click this passage to edit it.
+[[Finish|Homepage]] </tw-passagedata>
 </tw-storydata>
 
 
